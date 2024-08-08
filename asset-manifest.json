@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/REDUX-ECOMMERSE-KINOVA/static/js/main.10ed7663.js",
+    "static/media/woman_hero.png": "/REDUX-ECOMMERSE-KINOVA/static/media/woman_hero.d109717db264ec684e97.png",
+    "static/media/logo-kinova-sin-fondo.png": "/REDUX-ECOMMERSE-KINOVA/static/media/logo-kinova-sin-fondo.592ad31266785658c8eb.png",
+    "static/media/bg_v2.svg": "/REDUX-ECOMMERSE-KINOVA/static/media/bg_v2.7083612ffcfb35962c21833244fa2f59.svg",
+    "index.html": "/REDUX-ECOMMERSE-KINOVA/index.html",
+    "main.10ed7663.js.map": "/REDUX-ECOMMERSE-KINOVA/static/js/main.10ed7663.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.10ed7663.js"
+  ]
+}
