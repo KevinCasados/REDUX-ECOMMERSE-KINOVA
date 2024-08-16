@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const CartContainer = styled.div`
   position: fixed;
-  right: ${({ isVisible }) => (isVisible ? '0' : '-40vw')};
+  right: ${({ isVisible }) => (isVisible ? '0' : '-100vw')};
   top: 0;
   width: 30vw;
   height: 100%;
@@ -11,7 +11,28 @@ export const CartContainer = styled.div`
   z-index: 100;
   display: flex;
   flex-direction: column;
-  transition: right 0.3s ease-in-out;
+  transition: right 0.5s ease-in-out;
+
+  @media (max-width: 1800px) {
+    width: 37vw;
+    transition: all ease 0.25s;
+  }
+  @media (max-width: 1480px) {
+    width: 42vw;
+    transition: all ease 0.25s;
+  }
+  @media (max-width: 1300px) {
+    width: 50vw;
+    transition: all ease 0.25s;
+  }
+  @media (max-width: 1024px) {
+    width: 55vw;
+    transition: all ease 0.25s;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    transition: all ease 0.25s;
+  }
 `;
 
 export const CartHeader = styled.div`
@@ -20,7 +41,7 @@ export const CartHeader = styled.div`
   align-items: center;
   padding: 10px 20px;
   border-bottom: 1px solid #ddd;
-  background-color: #cbff0f;
+  background-color: #C70B1D;
 `;
 
 export const CartTitle = styled.h2`
@@ -68,6 +89,8 @@ export const CartItemName = styled.p`
 
   & > svg {
     cursor: pointer; 
+    margin: 10px;
+    font-size: 1.3rem;
   }
 `;
 
@@ -116,7 +139,7 @@ export const CartTotal = styled.h2`
 `;
 
 export const ClearCartButton = styled.button`
-  background: #cbff0f;
+  background: #C70B1D;
   color: #000;
   border: none;
   padding: 10px 20px;
@@ -124,7 +147,7 @@ export const ClearCartButton = styled.button`
   margin-bottom: 10px;
   width: 100%;
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 600;
 `;
 
 export const CheckoutButton = styled.button`

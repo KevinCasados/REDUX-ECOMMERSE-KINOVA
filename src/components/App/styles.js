@@ -13,8 +13,7 @@ const ProductListContainer = styled.div`
   width: 100%;
   max-width: 1800px;
   margin: 0 auto;
-  padding: 25px;
-  padding-top: 80px; 
+  padding: 20px;
   box-sizing: border-box;
 `;
 
