@@ -51,6 +51,11 @@ export const NavList = styled.ul`
 
 export const NavItem = styled.li`
   margin: 0 15px;
+
+  &:hover {
+    transform: scale(105%);
+    transition: all ease 0.5s;
+  }
 `;
 
 export const NavLink = styled.a`
@@ -59,9 +64,8 @@ export const NavLink = styled.a`
   font-weight: bold;
 
   &:hover {
-    color: #cbff0f;
-    border-bottom: 1px solid #cbff0f;
-    transition: all ease 0.2s;
+    border-bottom: 5px solid #C70B1D;
+    transition: all ease;
   }
 `;
 
@@ -75,29 +79,46 @@ export const RightSection = styled.div`
 export const SearchContainer = styled.div`
   display: flex;
   align-items: center;
-  margin-right: 20px;
   position: relative;
 
   & svg {
     position: absolute;
-    left: 10px;
+    left: 17px;
     pointer-events: none;
+    color: #fff;
+    opacity: 0.5;
+  }
+
+  @media (max-width: 700px) {
+    display: none;
   }
 `;
 
 export const SearchInput = styled.input`
-  padding: 5px 5px 5px 30px;
-  border: 1px solid #ddd;
+  padding: 5px 5px 5px 45px;
+  border: 1px solid transparent;
   border-radius: 20px;
   transition: all 0.3s ease-in-out;
+  background-color: #313036;
+  font-size: 1rem;
+  transition: 250ms ease;
 
   &:focus {
     width: 160px;
     outline: none;
+    transition: 250ms ease;
+    color: #fff;
   }
 
   &:not(:focus) {
     width: 140px;
+    transition: 250ms ease;
+  }
+
+  &:hover {
+    border: 3px solid #6F6F71;
+    border-radius: 20px;
+    transition: all ease 0.1s;
   }
 `;
 
@@ -114,6 +135,11 @@ export const Icon = styled.div`
   & svg {
     color: #ffff;
   }
+
+  &:hover {
+    transform: scale(108%);
+    transition: all ease 0.2s;
+  }
 `;
 
 export const CartContainer = styled.div`
@@ -124,6 +150,11 @@ export const CartContainer = styled.div`
 
   & svg {
     color: #ffff;
+  }
+
+  &:hover {
+    transform: scale(108%);
+    transition: all ease 0.2s;
   }
 `;
 
@@ -155,5 +186,10 @@ export const HamburgerMenu = styled.div`
 
   @media (max-width: 1370px) {
     display: block;
+  }
+
+  &:hover {
+    transform: scale(105%);
+    transition: all ease 0.5s;
   }
 `;

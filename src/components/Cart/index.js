@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { removeFromCart, incrementQuantity, decrementQuantity, clearCart } from '../../actions/productActions';
+import { removeFromCart, incrementQuantity, decrementQuantity, clearCart } from '../../state/cart.slice';
 import { FaArrowRight, FaTimes } from 'react-icons/fa';
 import {
   CartContainer,

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { getProducts, addToCart } from '../../actions/productActions/index';
+import { fetchProducts } from '../../state/products.slice';
+import { addToCart } from '../../state/cart.slice';
 import { ProductListContainer, ProductCard, ProductImageContainer, ProductImage, ProductDetails, ProductCategory, ProductTitle, ProductPrice, AddToCartButton } from './styles';
 import { FaPlus } from 'react-icons/fa';
 
@@ -9,7 +10,7 @@ const ProductList = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(getProducts());
+    dispatch(fetchProducts());
   }, [dispatch]);
 
   return (
