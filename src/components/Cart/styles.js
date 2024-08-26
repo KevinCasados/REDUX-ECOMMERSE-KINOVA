@@ -12,6 +12,7 @@ export const CartContainer = styled.div`
   display: flex;
   flex-direction: column;
   transition: right 0.5s ease-in-out;
+  display: flex ${({ isVisible }) => (isVisible ? 'block' : 'none')};
 
   @media (max-width: 1800px) {
     width: 37vw;
