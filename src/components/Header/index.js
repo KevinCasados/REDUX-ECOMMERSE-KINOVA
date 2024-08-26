@@ -45,7 +45,7 @@ const Header = ({ toggleCart }) => {
             <FaShoppingCart />
             <CartCount>{getTotalItems()}</CartCount>
           </CartContainer>
-          <HamburgerMenu onClick={toggleMenu}>
+          <HamburgerMenu onClick={toggleMenu} data-testid="hamburger-menu">
             <FaBars />
           </HamburgerMenu>
         </IconsContainer>
