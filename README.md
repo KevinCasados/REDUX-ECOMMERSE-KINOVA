@@ -1,3 +1,30 @@
+# REDUX-ECOMMERSE-KINOVA
+
+## Descripción del Proyecto
+**REDUX-ECOMMERSE-KINOVA** es una aplicación de comercio electrónico creada con **React** y **Redux**. Este proyecto está diseñado para simular una tienda en línea funcional, implementando un flujo de datos global con Redux para gestionar el estado de la aplicación. Incluye funcionalidades esenciales para un ecommerce, como visualización de productos, carrito de compras dinámico y manejo de cantidades.
+
+## Tecnologías Utilizadas
+- **Frontend:**
+  - React.js
+  - JavaScript
+  - Redux (incluyendo Redux Toolkit)
+- **Estilos:**
+  - CSS
+  - TailwindCSS
+
+## Funcionalidades Destacadas
+- **Gestión de Estado con Redux:** Centralización del estado de la aplicación para manejar productos, carrito de compras y usuarios.
+- **Carrito de Compras Dinámico:** Agregar, eliminar y modificar cantidades de productos en el carrito.
+- **Visualización de Productos:** Renderizado dinámico de productos disponibles en la tienda.
+- **Diseño Responsivo:** Adaptación fluida a dispositivos móviles, tabletas y escritorios.
+
+## Instrucciones de Instalación y Uso
+Sigue estos pasos para instalar y ejecutar el proyecto localmente:
+
+1. Clona este repositorio:
+   ```bash
+   git clone https://github.com/KevinCasados/REDUX-ECOMMERSE-KINOVA.git
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
